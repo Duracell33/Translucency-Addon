@@ -1,33 +1,41 @@
 {
   "mappings": {
     "net/fabricmc/translucency/mixin/FontRendererMixin": {
-      "Lnet/minecraft/src/FontRenderer;drawString(Ljava/lang/String;IIIZ)I": "Lnet/minecraft/class_370;method_4246(Ljava/lang/String;IIIZ)I",
-      "drawString(Ljava/lang/String;III)I": "Lnet/minecraft/class_370;method_4247(Ljava/lang/String;III)I"
+      "drawString(Ljava/lang/String;III)I": "Lnet/minecraft/class_370;method_4247(Ljava/lang/String;III)I",
+      "drawString(Ljava/lang/String;IIIZ)I": "Lnet/minecraft/class_370;method_4246(Ljava/lang/String;IIIZ)I",
+      "drawStringWithShadow(Ljava/lang/String;III)I": "Lnet/minecraft/class_370;method_956(Ljava/lang/String;III)I"
+    },
+    "net/fabricmc/translucency/mixin/GuiHeadMixin": {
+      "drawTexturedModalRect": "Lnet/minecraft/class_372;method_992(IIIIII)V"
+    },
+    "net/fabricmc/translucency/mixin/GuiInGameMenuMixin": {
+      "initGui": "Lnet/minecraft/class_385;method_1044()V"
     },
     "net/fabricmc/translucency/mixin/GuiReturnMixin": {
       "drawTexturedModalRect": "Lnet/minecraft/class_372;method_992(IIIIII)V"
     },
     "net/fabricmc/translucency/mixin/GuiScreenMixin": {
       "drawWorldBackground": "Lnet/minecraft/class_388;method_1031(I)V"
-    },
-    "net/fabricmc/translucency/mixin/GuiHeadMixin": {
-      "drawTexturedModalRect": "Lnet/minecraft/class_372;method_992(IIIIII)V"
     }
   },
   "data": {
     "named:intermediary": {
       "net/fabricmc/translucency/mixin/FontRendererMixin": {
-        "Lnet/minecraft/src/FontRenderer;drawString(Ljava/lang/String;IIIZ)I": "Lnet/minecraft/class_370;method_4246(Ljava/lang/String;IIIZ)I",
-        "drawString(Ljava/lang/String;III)I": "Lnet/minecraft/class_370;method_4247(Ljava/lang/String;III)I"
+        "drawString(Ljava/lang/String;III)I": "Lnet/minecraft/class_370;method_4247(Ljava/lang/String;III)I",
+        "drawString(Ljava/lang/String;IIIZ)I": "Lnet/minecraft/class_370;method_4246(Ljava/lang/String;IIIZ)I",
+        "drawStringWithShadow(Ljava/lang/String;III)I": "Lnet/minecraft/class_370;method_956(Ljava/lang/String;III)I"
+      },
+      "net/fabricmc/translucency/mixin/GuiHeadMixin": {
+        "drawTexturedModalRect": "Lnet/minecraft/class_372;method_992(IIIIII)V"
+      },
+      "net/fabricmc/translucency/mixin/GuiInGameMenuMixin": {
+        "initGui": "Lnet/minecraft/class_385;method_1044()V"
       },
       "net/fabricmc/translucency/mixin/GuiReturnMixin": {
         "drawTexturedModalRect": "Lnet/minecraft/class_372;method_992(IIIIII)V"
       },
       "net/fabricmc/translucency/mixin/GuiScreenMixin": {
         "drawWorldBackground": "Lnet/minecraft/class_388;method_1031(I)V"
-      },
-      "net/fabricmc/translucency/mixin/GuiHeadMixin": {
-        "drawTexturedModalRect": "Lnet/minecraft/class_372;method_992(IIIIII)V"
       }
     }
   }

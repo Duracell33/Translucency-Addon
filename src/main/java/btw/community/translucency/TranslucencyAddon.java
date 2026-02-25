@@ -1,23 +1,17 @@
 package btw.community.translucency;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
+import api.AddonHandler;
+import api.BTWAddon;
 
 public class TranslucencyAddon extends BTWAddon {
     private static TranslucencyAddon instance;
 
-    private TranslucencyAddon() {
-        super("Translucency", "1.0.1", "");
+    public TranslucencyAddon() {
+        super();
     }
 
     @Override
     public void initialize() {
         AddonHandler.logMessage(this.getName() + " Version " + this.getVersionString() + " Initializing...");
-    }
-
-    public static TranslucencyAddon getInstance() {
-        if (instance == null)
-            instance = new TranslucencyAddon();
-        return instance;
     }
 }

@@ -1,6 +1,6 @@
 package net.fabricmc.translucency;
 
-import btw.AddonHandler;
+import api.AddonHandler;
 import net.fabricmc.api.ModInitializer;
 
 public class TranslucencyMod implements ModInitializer {

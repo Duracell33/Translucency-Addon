@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "translucency",
-  "version": "${version}",
-
-  "name": "Translucency",
+  "id": "${mod_id}",
+  "version": "${version}+BTW-${btw_version}",
+  "name": "${name}",
   "description": "Makes the gui translucent",
   "authors": [
     "Polar Onyx"
@@ -12,27 +11,26 @@
     "homepage": "https://github.com/Polar-Onyx/Translucency-Addon",
     "sources": "https://github.com/Polar-Onyx/Translucency-Addon"
   },
-
   "license": "MIT",
-  "icon": "translucency/icon.png",
-
+  "icon": "assets/translucency/icon.png",
   "environment": "*",
   "entrypoints": {
-    "init": [
+    "main": [
       "net.fabricmc.translucency.TranslucencyMod"
     ],
-    "preLaunch": [
-      "net.fabricmc.translucency.TranslucencyPreLaunchInitializer"
+    "btw:addon": [
+      "btw.community.translucency.TranslucencyAddon"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
-
-  "depends": {
-    "fabricloader": ">=0.7.4"
+  "custom": {
+    "btw:addon_prefix": ""
   },
-  "suggests": {
-
+  "mixins": [
+    "${mod_id}.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "${minecraft_version}",
+    "btw": ">=${btw_version}"
   }
 }
