@@ -14,7 +14,8 @@ public class FontRendererMixin {
         if (!TranslucencyColorController.shouldForceWhite())
             return color;
 
-        if (color == 4210752 || color == 8421504) {
+        int rgb = color & 0xFFFFFF;
+        if (rgb == 4210752) { // Only force dark gray (titles) to white, leave subtext alone
             return 0xFFFFFFFF;
         }
         return color;
@@ -25,7 +26,8 @@ public class FontRendererMixin {
         if (!TranslucencyColorController.shouldForceWhite())
             return color;
 
-        if (color == 4210752 || color == 8421504) {
+        int rgb = color & 0xFFFFFF;
+        if (rgb == 4210752) { // Only force dark gray (titles) to white, leave subtext alone
             return 0xFFFFFFFF;
         }
         return color;
@@ -36,7 +38,8 @@ public class FontRendererMixin {
         if (!TranslucencyColorController.shouldForceWhite())
             return color;
 
-        if (color == 4210752 || color == 8421504) {
+        int rgb = color & 0xFFFFFF;
+        if (rgb == 4210752) { // Only force dark gray (titles) to white, leave subtext alone
             return 0xFFFFFFFF;
         }
         return color;
@@ -47,7 +50,8 @@ public class FontRendererMixin {
         if (!TranslucencyColorController.shouldForceWhite())
             return color;
 
-        if (color == 4210752 || color == 8421504) {
+        int rgb = color & 0xFFFFFF;
+        if (rgb == 4210752) { // Only force dark gray (titles) to white, leave subtext alone
             return 0xFFFFFFFF;
         }
         return color;
