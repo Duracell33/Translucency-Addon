@@ -3,7 +3,6 @@ package net.fabricmc.translucency.mixin;
 import net.minecraft.src.GuiScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.*;
-//import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(GuiScreen.class)
 public class GuiScreenMixin {
