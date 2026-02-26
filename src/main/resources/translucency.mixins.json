@@ -8,10 +8,8 @@
     "FontRendererMixin",
     "GuiHeadMixin",
     "GuiInGameMenuMixin",
-    "GuiIngameMixin",
     "GuiSlotMixin",
     "GuiMerchantMixin",
-    "GuiMainMenuMixin",
     "GuiReturnMixin",
     "GuiScreenMixin"
   ],
