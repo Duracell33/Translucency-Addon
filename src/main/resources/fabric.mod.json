@@ -5,11 +5,11 @@
   "name": "${name}",
   "description": "Makes the gui translucent",
   "authors": [
-    "Polar Onyx"
+    "Polar Onyx (Original author), Gemini/Duracell33 (Port + Update)"
   ],
   "contact": {
-    "homepage": "https://github.com/Polar-Onyx/Translucency-Addon",
-    "sources": "https://github.com/Polar-Onyx/Translucency-Addon"
+    "homepage": "https://github.com/Duracell33/Translucency-Addon",
+    "sources": "https://github.com/Duracell33/Translucency-Addon"
   },
   "license": "MIT",
   "icon": "assets/translucency/icon.png",
